@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" style="width: 100%; height: 100%">
-      <canvas id="unity-canvas" width=auto height=auto></canvas>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/memorypixels.github.io.loader.js";
+      var loaderUrl = buildUrl + "/123.loader.js";
       var config = {
-        dataUrl: buildUrl + "/memorypixels.github.io.data.gz",
-        frameworkUrl: buildUrl + "/memorypixels.github.io.framework.js.gz",
-        codeUrl: buildUrl + "/memorypixels.github.io.wasm.gz",
+        dataUrl: buildUrl + "/123.data.gz",
+        frameworkUrl: buildUrl + "/123.framework.js.gz",
+        codeUrl: buildUrl + "/123.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Notes",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
